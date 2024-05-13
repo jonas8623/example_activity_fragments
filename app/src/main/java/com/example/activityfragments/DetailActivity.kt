@@ -9,7 +9,7 @@ import androidx.core.view.WindowInsetsCompat
 
 class DetailActivity : AppCompatActivity() {
 
-    lateinit var buttonBack: Button
+    private lateinit var buttonBack: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
