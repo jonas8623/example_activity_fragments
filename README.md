@@ -1,0 +1,1 @@
+# example_activity_fragments
