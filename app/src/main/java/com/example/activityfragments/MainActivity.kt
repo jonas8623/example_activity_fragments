@@ -26,8 +26,15 @@ class MainActivity : AppCompatActivity() {
 
         buttonNewPage = findViewById(R.id.button_new_page)
         buttonNewPage.setOnClickListener {
-
             val intent = Intent(this, DetailActivity::class.java)
+
+            // Passando parametros para a nova tela
+//            intent.putExtra("movie", "The Winter")
+//            intent.putExtra("rating", 6.9)
+
+            val movie = Movie("A Criatura", "Teste", 6.2, "Jonas")
+            intent.putExtra("movie", movie)
+
             startActivity(intent) // Abrir nova tela
         }
     }
